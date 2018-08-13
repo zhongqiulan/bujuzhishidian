@@ -1,0 +1,230 @@
+/*初始化代码*/
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+i,
+em,
+strong,
+img,
+input,
+li,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #999;
+}
+
+a:hover {
+	color: #f10215;
+}
+
+li {
+	list-style: none;
+}
+
+input {
+	border: 0 none;
+	outline: none;
+}
+
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: normal;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+.w {
+	width: 1190px;
+	margin: 0 auto;
+}
+
+body {
+	font: 12px/100% "微软雅黑";
+	background-color: #f6f6f6;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom:1;
+}
+
+/*样式代码*/
+/*top模块*/
+.top {
+	height: 30px;
+	background-color: #e3e4e5;
+	border-bottom: 1px solid #dddddd;
+}
+
+/*header模块*/
+.header {
+	height: 140px;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: -31px;
+}
+
+.logo a {
+	width: 190px;
+	height: 171px;
+	display: block;
+	background: url("../images/logo.v2.png") #fff;
+}
+
+.header .search-bar {
+	height: 33px;
+	width: 548px;
+	border: 1px solid #f10215;
+	position: absolute;
+	top: 25px;
+	left: 320px;
+}
+
+.header .search-bar input {
+	width: 495px;
+	height: 33px;
+	padding-left: 3px;
+	float: left;
+}
+
+.header .search-bar a {
+	float:right;
+	width: 50px;
+	height: 33px;
+	background-color: #f10215;
+	color: #fff;
+	text-align: center;
+	line-height: 33px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header .hot-word {
+	position: absolute;
+	top: 70px;
+	left: 320px;
+}
+
+.header .hot-word li {
+	float: left;
+	margin-right: 10px;
+}
+
+.header .hot-word li:first-child a {
+	color: #f10215;
+}
+
+.header .buyCar {
+	width: 188px;
+	height: 33px;
+	border: 1px solid #e3e4e5;
+	position: absolute;
+	top: 25px;
+	right: 100px;
+	text-align: center;
+	line-height: 33px;
+	background-color: #fff;
+}
+
+.header .buyCar a {
+	color: #f10215;
+}
+
+.header .buyCar i.num {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #f10215;
+	position: absolute;
+	line-height: 16px;
+	color: #fff;
+	top: 5px;
+	right: 44px;
+
+}
+
+.header .qr {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #cfcfcf;
+	position: absolute;
+	top: -1px;
+	right: 5px;
+	padding: 4px 3px 2px 3px;
+}
+
+.header .qr .triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 6px;
+	border-style: solid;
+	border-color:  transparent transparent #fff transparent;
+	top: -11px;
+	left: 50%;
+	margin-left: -6px;
+}
+
+.header .nav {
+	position: absolute;
+	bottom: 12px;
+	left: 230px;
+}
+
+.header .nav li {
+	float: left;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 600;
+	margin-right: 30px;
+}
+
+.header .nav li a {
+	color: #555;
+}
+
+.header .nav li.line {
+	width: 1px;
+	height: 12px;
+	background-color: #ccc;
+	margin-top: 4px;
+	margin-right: 20px;
+	margin-left: -10px;
+}
+.header .ad {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}

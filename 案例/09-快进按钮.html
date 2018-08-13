@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box {
+			position: relative;
+		}
+		.left {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20px 25px 20px 25px;
+			border-color: transparent transparent transparent red;
+		}
+		.right {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20px 25px 20px 25px;
+			border-color: transparent transparent transparent red;
+			position: absolute;
+			top: 0;
+			left: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

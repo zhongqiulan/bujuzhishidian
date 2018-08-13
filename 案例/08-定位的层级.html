@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			/*position: absolute;*/
+		}
+		.red {
+			background-color: red;
+			
+		}
+		.yellow {
+			background-color: yellow;
+			z-index: -1;
+			
+		}
+		.blue {
+			background-color: blue;
+			
+		}
+		/*默认情况下,越后面的定位元素,层级越高*/
+		/*z-index:控制的是定位的盒子的层级,数值越大,那么层级越高*/
+		/*假如现在存在父子关系,给子盒子设置z-index:-100;(子盒子的层级不可能比父盒子低)*/
+		/*z-index只对定位的元素有作用*/
+		/*三种布局手段中,各自的层级
+			标准流  <  浮动流   <   定位流
+		*/
+
+
+		.father {
+			width: 400px;
+			height: 400px;
+			background-color: red;
+		
+			position: absolute;
+			z-index: 100000;
+			z-index: -1;
+
+
+		}
+		.son {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			position: absolute;
+			z-index: -100;
+
+
+		}
+	</style>
+</head>
+<body>
+	<!-- <div class="red"></div>
+	<div class="blue"></div>
+	<div class="yellow"></div> -->
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

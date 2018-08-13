@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 50px;
+        border-bottom: 1px solid red;
+        z-index: 999;
+    }
+    *{
+    	margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box;
+    }
+    .footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        border-top: 1px solid #0f0;
+        z-index: 999;
+    }
+    html,body{
+    	height: 100%;
+    }
+    /* 相对定位的父元素 */
+    .container{
+    	position: relative;
+    	padding: 50px 0;
+    	width: 100%;
+    	height: 100%;
+    }
+    /* 相对定位的子元素 子元素相对定位了  就会参照父元素的内容来定位 */
+    .mui-scroll-wrapper {
+        position: relative;        
+        top: 0px;
+        height: 100%;    
+        background-color: #ccc;
+    }
+    /* 1. 绝对定位 不会参照父元素的padding
+    2. 相对定位 是会参照父元素的padding */
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <div class="mui-scroll-wrapper">
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

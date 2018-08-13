@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            /* height: 100px; */
+        }
+
+        header a {
+            width: 100%;
+        }
+
+        header a img {
+            display: block;
+            width: 100%;
+        }
+
+        section {
+            display: flex;
+            height: 100px;
+            border-top: 3px solid #fff;
+        }
+
+        section .left {
+            height: 100%;
+            background-color: yellow;
+            flex: 1;
+            border-right: 3px solid #fff;
+        }
+
+        section .right {
+            height: 100%;
+            background-color: hotpink;
+            flex: 2;
+
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        /* a标签比较特殊，可以使用弹性布局让文字局，就把文字当成子元素 */
+        section .right a {
+            width: 50%;
+            border: 2px solid #fff;
+            box-sizing: border-box;
+
+            /* 使用弹性布局让文字居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section.six {
+            background-color: hotpink;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section.six a {
+            border: 2px solid #fff;
+            width: 33.3333333%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-sizing: border-box;
+        }
+
+        footer {
+            display: flex;
+        }
+
+        footer a {
+            flex: 1;
+        }
+
+        footer a img {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href=""><img src="./images/banner.jpg" alt=""></a>
+    </header>
+    <!-- (section>.left+(.right>a{住酒店}*4))*4 -->
+    <section>
+        <div class="left"></div>
+        <div class="right">
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+        </div>
+    </section>
+    <section>
+        <div class="left"></div>
+        <div class="right">
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+        </div>
+    </section>
+    <section>
+        <div class="left"></div>
+        <div class="right">
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+        </div>
+    </section>
+    <section>
+        <div class="left"></div>
+        <div class="right">
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+            <a href="">住酒店</a>
+        </div>
+    </section>
+
+    <section class="six">
+        <a href="">住酒店</a>
+        <a href="">住酒店</a>
+        <a href="">住酒店</a>
+        <a href="">住酒店</a>
+        <a href="">住酒店</a>
+        <a href="">住酒店</a>
+    </section>
+
+    <footer>
+        <a href=""><img src="./images/extra_1.png" alt=""></a>
+        <a href=""><img src="./images/extra_2.png" alt=""></a>
+    </footer>
+</body>
+</html>
